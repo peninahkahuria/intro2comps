@@ -1,0 +1,51 @@
+fun main (){
+printRockPaperScissorsGame("paper","rock");printRockPaperScissorsGame("rock","scissors");printRockPaperScissorsGame("scissors","rock");printRockPaperScissorsGame("paper","paper")
+var Peninah= Human("peninah",19,30)
+    Peninah.speak("hello")
+    Peninah.birthday(19)
+    Peninah.eat(30)
+
+
+   
+
+
+
+}
+    fun printRockPaperScissorsGame(player1:String,player2:String){
+        var gameArray=arrayOf("rock","paper","scissors")
+        var rounds=3
+        if (player1=="paper" && player2=="paper"){
+            println("its a draw")
+        }
+        else if(player1=="paper" && player2=="rock"){
+            println("player1 wins")
+        }
+        else if(player2=="rock" && player1=="scissors"){
+            println("player2 wins")
+        }
+        else {
+            println("quit")
+        }
+    }
+        
+        class Human (var name:String,var age:Int,var weight:Int){
+            
+            fun eat(weight:Int){
+                var foodweight=4
+                var weight=(weight+foodweight)
+                println("i am eating $foodweight kgs of food i am $weight kgs")
+                
+                
+                
+        }
+         fun speak(Speech:String){
+             println("Hello")
+         }   
+            
+          fun birthday(age:Int){
+              var age=age+1
+              println("i am $age years old")
+          }  
+                 
+        
+    }

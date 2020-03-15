@@ -1,0 +1,36 @@
+fun main (){
+   attendanceCheck("peninah")
+   serveDrink(4)
+   serveDrink(9)
+   serveDrink(22)
+   var even=isEven(37)
+   
+}
+fun attendanceCheck(name:String){
+    if (name=="peninah"){
+        println("present")
+    }
+    else{
+        println("not me")
+    }
+}
+fun serveDrink(age:Int){
+    if (age<6){
+        println("milk")
+    }
+    else if (age<15){
+        println("fanta orange")
+    }
+    else{
+        println("coca cola")
+    }
+}
+fun isEven(number:Int): Boolean
+    if(number%2==0){
+        return true
+            
+        }
+        else{
+            return false
+      }
+        }
